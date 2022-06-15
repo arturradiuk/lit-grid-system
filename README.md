@@ -1,6 +1,6 @@
 # lit-grid-system
 
-CSS grid system for [Lit](https://lit.dev) library
+Simple CSS grid system for [Lit](https://lit.dev) library.
 
 ## Demo run instruction
 

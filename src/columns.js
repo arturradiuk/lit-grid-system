@@ -7,6 +7,38 @@ const getRow = (parameters) => {
         display: grid;
         grid-template-columns: repeat(${unsafeCSS(parameters.numberOfColumns)}, 1fr);
       }
+
+      .justify-items-stretch {
+        justify-items: stretch;
+      }
+
+      .justify-items-start {
+        justify-items: start;
+      }
+
+      .justify-items-end {
+        justify-items: end;
+      }
+
+      .justify-items-center {
+        justify-items: center;
+      }
+
+      .align-items-center {
+        align-items: center;
+      }
+      
+      .align-items-start {
+        align-items: start;
+      }
+      
+      .align-items-end {
+        align-items: end;
+      }
+      
+      .align-items-stretch {
+        align-items: stretch;
+      }
     `
 }
 
@@ -42,8 +74,6 @@ const getResponsiveColumns = (parameters) => {
         }).join('')
     ).join('')
 }
-
-console.log(unsafeCSS(getRow(defaultParameters)).cssText)
 
 export const getLitGrid = (parameters = defaultParameters) => {
     return [css`
