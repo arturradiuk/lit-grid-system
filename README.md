@@ -15,3 +15,5 @@ npm ci
 ```shell
 npm run start
 ```
+
+3. Open this link in your web browser [http://localhost:2022](http://localhost:2022)
