@@ -1,5 +1,6 @@
 import {LitElement, html, css} from 'lit';
-import {litGrid} from "../../../src/columns";
+import {getLitGrid} from "../../../src/columns";
+import {bootstrapParameters} from "../../../src/grid-parameters";
 
 export class MainView extends LitElement {
     constructor() {
@@ -7,7 +8,7 @@ export class MainView extends LitElement {
     }
 
     static styles = [
-        litGrid,
+        getLitGrid(bootstrapParameters),
         css`
           .row > div {
             margin: 5px;
